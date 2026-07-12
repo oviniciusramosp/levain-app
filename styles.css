@@ -169,6 +169,21 @@ h1, h2, h3 { font-weight: 800; line-height: 1.05; letter-spacing: -.035em; }
 .sh-lesson__row { display: flex; justify-content: space-between; font-size: .64rem; opacity: .9; margin-bottom: .22rem; }
 .sh-lesson__title { font-weight: 700; font-size: .8rem; margin-bottom: .5rem; }
 
+/* screen: COURSE (step 1) */
+.co-video { position: relative; height: 96px; border-radius: 14px; background: linear-gradient(135deg, #C98A34, #7a4f18); display: grid; place-items: center; margin-bottom: .5rem; overflow: hidden; }
+.co-video__play { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.94); color: var(--mustard-deep); display: grid; place-items: center; font-size: .78rem; padding-left: 2px; box-shadow: 0 4px 12px rgba(0,0,0,.2); }
+.co-video__tag { position: absolute; bottom: .4rem; left: .5rem; font-size: .54rem; font-weight: 700; color: #fff; background: rgba(0,0,0,.4); padding: .12rem .4rem; border-radius: 6px; }
+.co-lesson { font-weight: 700; font-size: .84rem; margin: 0 .1rem .4rem; }
+.co-prog { display: flex; align-items: center; gap: .5rem; margin-bottom: .7rem; }
+.co-prog .bar { flex: 1; }
+.co-prog span { font-size: .6rem; font-weight: 700; color: var(--mustard-dark); }
+.co-list { display: flex; flex-direction: column; gap: .4rem; }
+.co-item { display: flex; align-items: center; gap: .5rem; background: var(--card); border-radius: 12px; padding: .5rem .6rem; font-size: .72rem; font-weight: 500; box-shadow: var(--shadow-sm); }
+.co-item .dot { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid var(--line); display: grid; place-items: center; font-size: .5rem; flex: none; }
+.co-item.done .dot { background: var(--mustard-deep); border-color: var(--mustard-deep); color: #fff; }
+.co-item.now { outline: 2px solid var(--mustard); }
+.co-item.now .dot { background: var(--mustard); border-color: var(--mustard); color: #fff; }
+
 /* screen: TRACK (step 1) */
 .tk-name { text-align: center; font-weight: 800; font-size: .9rem; letter-spacing: -.02em; margin: .3rem 0 0; }
 .tk-name span { color: var(--mustard-dark); font-weight: 500; }
