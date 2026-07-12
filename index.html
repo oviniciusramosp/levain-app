@@ -3,24 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Levain — Master Sourdough, One Bake at a Time</title>
-  <meta name="description" content="Levain is the all-in-one sourdough companion. Learn with a full course, track your starter, follow recipes with smart timers, and bake better bread. 100% offline." />
+  <title>Levain — Bake Real Sourdough, Skip the Guesswork</title>
+  <meta name="description" content="Levain is the all-in-one sourdough app. Learn the craft, track your starter's peak, and follow recipes with smart timers. Beautiful and 100% offline." />
   <meta name="theme-color" content="#F1F0ED" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Levain — Master Sourdough, One Bake at a Time" />
-  <meta property="og:description" content="Learn, track your starter, and bake better bread. The all-in-one sourdough companion — beautiful, offline, and made for home bakers." />
+  <meta property="og:title" content="Levain — Bake Real Sourdough, Skip the Guesswork" />
+  <meta property="og:description" content="Learn the craft, track your starter's peak, and follow recipes with smart timers. The all-in-one sourdough app — beautiful and 100% offline." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://levain-app.com" />
-  <meta property="og:image" content="https://levain-app.com/assets/icon-jar.png" />
+  <meta property="og:image" content="https://levain-app.com/assets/icon.png" />
 
-  <link rel="icon" href="assets/icon-jar.png" />
-  <link rel="apple-touch-icon" href="assets/icon-jar.png" />
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -30,16 +28,16 @@
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a class="brand" href="#top" aria-label="Levain home">
-        <img class="brand__mark" src="assets/icon-jar.png" alt="" />
+        <img class="brand__mark" src="assets/icon.png" alt="" />
         <span class="brand__word">Levain</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#learn">Learn</a>
-        <a href="#track">Starter</a>
-        <a href="#recipes">Recipes</a>
-        <a href="#pricing">Pricing</a>
+        <a href="#top">Home</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn--pill nav__cta" href="#download">Download</a>
+      <a class="btn btn--dark" href="#download">Download</a>
     </div>
   </header>
 
@@ -47,217 +45,71 @@
 
     <!-- ░░ HERO ░░ -->
     <section class="hero">
-      <div class="hero__glow hero__glow--a"></div>
-      <div class="hero__glow hero__glow--b"></div>
-      <div class="hero__grain" aria-hidden="true"></div>
-
       <div class="hero__inner">
         <div class="hero__copy">
-          <span class="eyebrow reveal">🌾 Your pocket sourdough mentor</span>
+          <div class="rating reveal">
+            <div class="rating__avatars"><span></span><span></span><span></span></div>
+            <span class="rating__text">Loved by home bakers · <b>★ 4.8</b> rating</span>
+          </div>
           <h1 class="reveal" data-delay="1">
-            Master sourdough,<br />
-            <em>one bake</em> at a time.
+            Bake real sourdough.<br />
+            <span class="hl">Skip the guesswork.</span>
           </h1>
           <p class="hero__sub reveal" data-delay="2">
-            Learn the craft, keep your starter alive, and follow recipes with smart timers —
-            all in one warm, beautifully simple app. 100% offline.
+            Levain is the all-in-one sourdough app — learn the craft, track your starter's
+            peak, and follow recipes with smart timers. Beautiful, and 100% offline.
           </p>
           <div class="hero__actions reveal" data-delay="3">
-            <a class="btn btn--appstore" href="#download">
-              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.2-1.12 2.99-.83.94-2.18 1.67-3.29 1.58-.14-1.11.44-2.28 1.12-3.02.77-.85 2.13-1.5 3.29-1.55zM20.9 17.13c-.58 1.34-.86 1.94-1.6 3.13-1.04 1.66-2.5 3.73-4.32 3.75-1.61.02-2.02-1.05-4.2-1.04-2.18.01-2.64 1.06-4.25 1.04-1.82-.02-3.2-1.88-4.24-3.54C-.03 17.62-.3 12.09 2.03 9.16 3.13 7.77 4.86 6.9 6.5 6.9c1.67 0 2.72 1.06 4.1 1.06 1.34 0 2.16-1.06 4.09-1.06 1.46 0 3.01.8 4.11 2.17-3.61 1.98-3.02 7.13.1 8.06z"/></svg>
+            <a class="badge-store" href="#download" aria-label="Download on the App Store">
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.2-1.12 2.99-.83.94-2.18 1.67-3.29 1.58-.14-1.11.44-2.28 1.12-3.02.77-.85 2.13-1.5 3.29-1.55zM20.9 17.13c-.58 1.34-.86 1.94-1.6 3.13-1.04 1.66-2.5 3.73-4.32 3.75-1.61.02-2.02-1.05-4.2-1.04-2.18.01-2.64 1.06-4.25 1.04-1.82-.02-3.2-1.88-4.24-3.54C-.03 17.62-.3 12.09 2.03 9.16 3.13 7.77 4.86 6.9 6.5 6.9c1.67 0 2.72 1.06 4.1 1.06 1.34 0 2.16-1.06 4.09-1.06 1.46 0 3.01.8 4.11 2.17-3.61 1.98-3.02 7.13.1 8.06z"/></svg>
               <span><small>Download on the</small><b>App Store</b></span>
             </a>
-            <a class="btn btn--ghost" href="#learn">See how it works ↓</a>
-          </div>
-          <div class="hero__proof reveal" data-delay="4">
-            <div class="stars" aria-label="4.9 out of 5 stars">★★★★★</div>
-            <span>Loved by home bakers worldwide</span>
           </div>
         </div>
 
-        <div class="hero__device reveal" data-delay="2">
-          <div class="floaty">
-            <!-- PHONE: HOME DASHBOARD -->
-            <div class="phone" data-tilt>
-              <div class="phone__notch"></div>
-              <div class="phone__screen screen-home">
-                <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
-                <div class="sh-greet">
-                  <div>
-                    <p class="sh-hello">Good morning, Vini</p>
-                    <p class="sh-tag">let's bake something warm</p>
-                  </div>
-                  <div class="sh-avatar"></div>
-                </div>
-
-                <div class="sh-card">
-                  <div class="ring" style="--p:72">
-                    <div class="ring__hole">
-                      <img src="assets/icon-jar.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="sh-card__body">
-                    <span class="pill pill--ready">Ready to bake</span>
-                    <p class="sh-card__title">Your starter is peaking</p>
-                    <p class="sh-card__meta">Fed 6h ago · Peak in ~2h</p>
-                  </div>
-                </div>
-
-                <div class="sh-actions">
-                  <div class="sh-act"><span>🍚</span>Feed</div>
-                  <div class="sh-act"><span>🥄</span>Discard</div>
-                  <div class="sh-act sh-act--amber"><span>🔥</span>New bake</div>
-                </div>
-
-                <div class="sh-lesson">
-                  <div class="sh-lesson__row">
-                    <p>Continue learning</p><span>Module 3 · 62%</span>
-                  </div>
-                  <p class="sh-lesson__title">The Starter — Building a Levain</p>
-                  <div class="bar"><i style="width:62%"></i></div>
-                </div>
-
-                <div class="tabbar">
-                  <div class="tab tab--on">􀎟<span>Home</span></div>
-                  <div class="tab">􀫖<span>Course</span></div>
-                  <div class="tab">􀐫<span>Recipes</span></div>
-                  <div class="tab">􀍡<span>More</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hero__chip hero__chip--1">🔔 Time to feed your starter</div>
-          <div class="hero__chip hero__chip--2">✅ Bulk fermentation done</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ░░ MARQUEE / STATS ░░ -->
-    <section class="stats">
-      <div class="stats__inner">
-        <div class="stat reveal"><b data-count="27">0</b><span>Guided lessons</span></div>
-        <div class="stat reveal" data-delay="1"><b data-count="15">0</b><span>Recipes &amp; formulas</span></div>
-        <div class="stat reveal" data-delay="2"><b data-count="100" data-suffix="%">0</b><span>Offline, no account</span></div>
-        <div class="stat reveal" data-delay="3"><b data-count="3">0</b><span>Languages</span></div>
-      </div>
-    </section>
-
-    <!-- ░░ FEATURE 1 — LEARN ░░ -->
-    <section class="feature" id="learn">
-      <div class="feature__inner">
-        <div class="feature__text reveal">
-          <span class="kicker kicker--green">The Course</span>
-          <h2>From first feed to<br /><em>bakery-worthy</em> loaves.</h2>
-          <p>A complete, didactic sourdough course — 27 lessons across 5 modules. Ingredients, the starter, the method, and troubleshooting. Bite-sized, visual, and built to actually stick.</p>
-          <ul class="ticks">
-            <li>Interactive lessons with quizzes &amp; gentle gamification</li>
-            <li>Progress tracking that remembers exactly where you stopped</li>
-            <li>Written by bakers, rewritten to be genuinely fun to read</li>
-          </ul>
-          <a class="link-arrow" href="#download">Start the course →</a>
-        </div>
-        <div class="feature__media reveal" data-delay="2">
-          <div class="phone phone--sm">
-            <div class="phone__screen screen-course">
-              <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
-              <p class="cs-title">Your Course</p>
-              <div class="cs-hero">
-                <p class="cs-hero__k">Module 3</p>
-                <p class="cs-hero__t">The Starter</p>
-                <div class="bar bar--light"><i style="width:62%"></i></div>
-                <span class="cs-hero__m">5 of 8 lessons</span>
-              </div>
-              <div class="cs-list">
-                <div class="cs-item cs-item--done"><span class="dot">✓</span>What is a levain?</div>
-                <div class="cs-item cs-item--done"><span class="dot">✓</span>Flour &amp; water ratios</div>
-                <div class="cs-item cs-item--now"><span class="dot">▶</span>Building a levain<em>Now</em></div>
-                <div class="cs-item"><span class="dot"></span>Reading the peak</div>
-                <div class="cs-item"><span class="dot"></span>Fridge maintenance</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ░░ FEATURE 2 — STARTER (dark band) ░░ -->
-    <section class="feature feature--dark" id="track">
-      <div class="feature__glow"></div>
-      <div class="feature__inner feature__inner--rev">
-        <div class="feature__text reveal">
-          <span class="kicker kicker--amber">Starter Manager</span>
-          <h2>Never guess if your<br />starter is <em>ready</em> again.</h2>
-          <p>Track feedings, watch the fermentation curve, and get a peak estimate tuned to your kitchen — even fridge-aware. Levain tells you exactly when to feed and when to bake.</p>
-          <ul class="ticks ticks--light">
-            <li>Live status: dormant, rising, peaking, or over-fermented</li>
-            <li>Peak calculator based on temperature &amp; feed ratio</li>
-            <li>Smart local reminders — no internet required</li>
-          </ul>
-          <a class="link-arrow link-arrow--light" href="#download">Track your starter →</a>
-        </div>
-        <div class="feature__media reveal" data-delay="2">
-          <div class="phone phone--sm">
-            <div class="phone__screen screen-track">
-              <div class="status-bar status-bar--light"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
-              <p class="tk-name">Doughy · <span>Rye starter</span></p>
-              <div class="ring ring--lg" style="--p:82">
-                <div class="ring__hole ring__hole--dark">
-                  <b>82%</b><small>to peak</small>
-                </div>
-              </div>
-              <div class="tk-curve">
-                <svg viewBox="0 0 220 70" preserveAspectRatio="none">
-                  <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" stop-color="#4ECBA0" stop-opacity=".45"/><stop offset="1" stop-color="#4ECBA0" stop-opacity="0"/>
-                  </linearGradient></defs>
-                  <path d="M0,60 C40,58 55,20 90,14 C120,9 130,40 160,52 C185,60 200,58 220,60" fill="none" stroke="#4ECBA0" stroke-width="2.5" stroke-linecap="round"/>
-                  <path d="M0,60 C40,58 55,20 90,14 C120,9 130,40 160,52 C185,60 200,58 220,60 L220,70 L0,70 Z" fill="url(#cg)"/>
-                  <circle cx="90" cy="14" r="4" fill="#E5A847"/>
-                </svg>
-                <span class="tk-peak">Peak · ~2h</span>
-              </div>
-              <div class="tk-stats">
-                <div><b>6h</b><span>since feed</span></div>
-                <div><b>1:5:5</b><span>ratio</span></div>
-                <div><b>24°C</b><span>ambient</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ░░ FEATURE 3 — RECIPES ░░ -->
-    <section class="feature" id="recipes">
-      <div class="feature__inner">
-        <div class="feature__text reveal">
-          <span class="kicker kicker--green">Recipes &amp; Timers</span>
-          <h2>Follow along,<br /><em>hands-free</em>.</h2>
-          <p>Every recipe becomes a guided bake. Step-by-step timers for autolyse, bulk, folds and proof — with haptics that nudge you at the right moment, even mid-knead.</p>
-          <ul class="ticks">
-            <li>Baker's-percentage calculator that scales any formula</li>
-            <li>Live bake mode with stacked, self-advancing timers</li>
-            <li>Filter by difficulty, hydration, and time</li>
-          </ul>
-          <a class="link-arrow" href="#download">Browse recipes →</a>
-        </div>
-        <div class="feature__media reveal" data-delay="2">
-          <div class="phone phone--sm">
+        <div class="hero__devices reveal" data-delay="2">
+          <!-- back phone: recipes -->
+          <div class="phone phone--back">
             <div class="phone__screen screen-recipes">
               <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
-              <p class="cs-title">Recipes</p>
-              <div class="rc-chips"><span class="rc-chip rc-chip--on">All</span><span class="rc-chip">Beginner</span><span class="rc-chip">Rustic</span><span class="rc-chip">Sweet</span></div>
-              <div class="rc-card rc-card--hero">
-                <div class="rc-card__img rc-img-1"></div>
-                <div class="rc-card__meta">
-                  <span class="pill pill--amber">75% hydration</span>
-                  <p>Classic Country Loaf</p>
-                  <small>⏱ 24h · ● Intermediate</small>
-                </div>
+              <p class="scr-title">Recipes</p>
+              <div class="rc-chips"><span class="rc-chip rc-chip--on">All</span><span class="rc-chip">Beginner</span><span class="rc-chip">Rustic</span></div>
+              <div class="rc-card">
+                <div class="rc-img rc-img-1"></div>
+                <div class="rc-meta"><span class="tag">75% hydration</span><p>Classic Country Loaf</p><small>⏱ 24h · ● Intermediate</small></div>
               </div>
               <div class="rc-grid">
-                <div class="rc-mini"><div class="rc-card__img rc-img-2"></div><p>Seeded Rye</p></div>
-                <div class="rc-mini"><div class="rc-card__img rc-img-3"></div><p>Soft Sandwich</p></div>
+                <div class="rc-mini"><div class="rc-img rc-img-2"></div><p>Seeded Rye</p></div>
+                <div class="rc-mini"><div class="rc-img rc-img-3"></div><p>Soft Sandwich</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- front phone: starter status -->
+          <div class="phone phone--front" data-tilt>
+            <div class="phone__notch"></div>
+            <div class="phone__screen screen-home">
+              <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
+              <div class="sh-greet">
+                <div><p class="sh-hello">Good morning, Vini</p><p class="sh-tag">let's bake something warm</p></div>
+                <div class="sh-avatar"></div>
+              </div>
+              <div class="sh-card">
+                <div class="ring" style="--p:82"><div class="ring__hole"><b>82%</b><small>to peak</small></div></div>
+                <div class="sh-card__body">
+                  <span class="tag tag--ready">Almost ready</span>
+                  <p class="sh-card__title">Your starter is peaking</p>
+                  <p class="sh-card__meta">Fed 6h ago · Peak in ~2h</p>
+                </div>
+              </div>
+              <div class="sh-actions">
+                <div class="sh-act"><span>🍚</span>Feed</div>
+                <div class="sh-act"><span>🥄</span>Discard</div>
+                <div class="sh-act sh-act--fill"><span>🔥</span>Bake</div>
+              </div>
+              <div class="sh-lesson">
+                <div class="sh-lesson__row"><p>Continue learning</p><span>62%</span></div>
+                <p class="sh-lesson__title">The Starter — Building a Levain</p>
+                <div class="bar bar--onmustard"><i style="width:62%"></i></div>
               </div>
             </div>
           </div>
@@ -265,142 +117,175 @@
       </div>
     </section>
 
-    <!-- ░░ BENTO — TOOLS ░░ -->
-    <section class="bento" id="tools">
-      <div class="bento__head reveal">
-        <span class="kicker kicker--green">The Toolkit</span>
-        <h2>Everything a home baker<br />reaches for — <em>in one place</em>.</h2>
+    <!-- ░░ HOW IT WORKS ░░ -->
+    <section class="how" id="how">
+      <div class="section-head reveal">
+        <span class="pill-label">How it works</span>
+        <h2>Three steps to your<br /><span class="hl">first great loaf</span></h2>
+        <p class="section-sub">Set up in a minute. Pull warm bread out of the oven this weekend.</p>
       </div>
-      <div class="bento__grid">
-        <div class="bcell bcell--wide reveal">
-          <div class="bcell__icon">🧮</div>
-          <h3>Hydration Calculator</h3>
-          <p>Dial in flour, water and salt by baker's percentage. Scale any recipe up or down in a tap.</p>
-          <div class="calc-demo">
-            <div class="calc-demo__row"><span>Flour</span><b>1000 g</b></div>
-            <div class="calc-demo__row"><span>Water · 75%</span><b>750 g</b></div>
-            <div class="calc-demo__row"><span>Salt · 2%</span><b>20 g</b></div>
-            <div class="calc-demo__slider"><i></i></div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__card">
+            <span class="step__num">01</span>
+            <div class="phone phone--card">
+              <div class="phone__screen screen-track">
+                <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
+                <p class="tk-name">Doughy · <span>rye starter</span></p>
+                <div class="ring ring--lg" style="--p:82"><div class="ring__hole"><b>82%</b><small>to peak</small></div></div>
+                <div class="tk-curve">
+                  <svg viewBox="0 0 220 66" preserveAspectRatio="none">
+                    <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2922D" stop-opacity=".45"/><stop offset="1" stop-color="#D2922D" stop-opacity="0"/></linearGradient></defs>
+                    <path d="M0,56 C40,54 55,18 90,12 C120,8 130,38 160,48 C185,56 200,54 220,56" fill="none" stroke="#C4872A" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M0,56 C40,54 55,18 90,12 C120,8 130,38 160,48 C185,56 200,54 220,56 L220,66 L0,66 Z" fill="url(#cg)"/>
+                    <circle cx="90" cy="12" r="4" fill="#9F4C00"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
+          <h3>Wake up your starter</h3>
+          <p>Add your levain and Levain tracks every feed — showing the exact moment it peaks and is ready to bake.</p>
         </div>
-        <div class="bcell reveal" data-delay="1">
-          <div class="bcell__icon">⏱️</div>
-          <h3>Bake Timers</h3>
-          <p>Stacked timers for every stage, running even when the app is closed.</p>
+
+        <div class="step reveal" data-delay="1">
+          <div class="step__card">
+            <span class="step__num">02</span>
+            <div class="phone phone--card">
+              <div class="phone__screen screen-bake">
+                <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
+                <p class="scr-title">Bake mode</p>
+                <div class="bake-now">
+                  <p class="bake-now__k">Step 3 of 8 · Bulk fermentation</p>
+                  <p class="bake-now__timer">2:45:00</p>
+                  <div class="bar"><i style="width:44%"></i></div>
+                </div>
+                <div class="bake-list">
+                  <div class="bake-row done"><span>✓</span>Autolyse<em>45m</em></div>
+                  <div class="bake-row done"><span>✓</span>Mix &amp; salt<em>15m</em></div>
+                  <div class="bake-row on"><span>▶</span>Stretch &amp; fold<em>now</em></div>
+                  <div class="bake-row"><span></span>Shape<em>20m</em></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Follow the bake</h3>
+          <p>Pick a recipe and let guided timers walk you through autolyse, folds, shaping and proof — with a nudge at every step.</p>
         </div>
-        <div class="bcell reveal" data-delay="2">
-          <div class="bcell__icon">📓</div>
-          <h3>Bake Journal</h3>
-          <p>Log crumb, crust and notes. Watch your loaves improve over time.</p>
-        </div>
-        <div class="bcell reveal" data-delay="1">
-          <div class="bcell__icon">🛒</div>
-          <h3>Shopping List</h3>
-          <p>Auto-built from any recipe. Check items off at the store.</p>
-        </div>
-        <div class="bcell bcell--accent reveal" data-delay="2">
-          <div class="bcell__icon">📶</div>
-          <h3>100% Offline</h3>
-          <p>No account, no cloud, no tracking. Everything lives on your device.</p>
+
+        <div class="step reveal" data-delay="2">
+          <div class="step__card">
+            <span class="step__num">03</span>
+            <div class="phone phone--card">
+              <div class="phone__screen screen-journal">
+                <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
+                <div class="jr-done"><span>🥖</span><p>Bake logged!</p><small>Country Loaf · today</small></div>
+                <div class="jr-photo"></div>
+                <div class="jr-rate">
+                  <div class="jr-rate__row"><span>Crust</span><b>★★★★★</b></div>
+                  <div class="jr-rate__row"><span>Crumb</span><b>★★★★☆</b></div>
+                </div>
+                <div class="jr-streak">🔥 <b>4-bake streak</b><em>keep it going</em></div>
+              </div>
+            </div>
+          </div>
+          <h3>Pull out real bread</h3>
+          <p>Open crumb, crackly crust. Log the bake with a photo and notes, keep your streak, and make the next one even better.</p>
         </div>
       </div>
     </section>
 
-    <!-- ░░ TESTIMONIALS ░░ -->
-    <section class="quotes">
-      <div class="quotes__head reveal">
-        <div class="stars stars--lg">★★★★★</div>
-        <h2>Bakers are rising to the occasion.</h2>
+    <!-- ░░ FEATURES (Beyond the recipe) ░░ -->
+    <section class="beyond" id="features">
+      <div class="section-head reveal">
+        <span class="pill-label">Beyond the recipe</span>
+        <h2>Built to make you<br /><span class="hl">a better baker</span></h2>
       </div>
-      <div class="quotes__grid">
-        <figure class="quote reveal">
-          <blockquote>“My starter finally survived past week two. The peak reminder alone is worth it.”</blockquote>
-          <figcaption><span class="q-av">M</span> Marina · first-time baker</figcaption>
-        </figure>
-        <figure class="quote reveal" data-delay="1">
-          <blockquote>“The course explains the <em>why</em>, not just the steps. Best sourdough resource I've used.”</blockquote>
-          <figcaption><span class="q-av">T</span> Théo · weekend baker</figcaption>
-        </figure>
-        <figure class="quote reveal" data-delay="2">
-          <blockquote>“Gorgeous, calm, and it works on the plane with zero signal. Exactly what I wanted.”</blockquote>
-          <figcaption><span class="q-av">A</span> Ana · pro-curious</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ░░ PRICING ░░ -->
-    <section class="pricing" id="pricing">
-      <div class="pricing__head reveal">
-        <span class="kicker kicker--green">Simple Pricing</span>
-        <h2>Start free. Go <em>Premium</em> when you're hooked.</h2>
-        <p class="pricing__sub">7 days free, then keep everything for less than a coffee a week. No account needed to start baking.</p>
-      </div>
-      <div class="pricing__grid">
-        <div class="plan reveal">
-          <h3>Free</h3>
-          <p class="plan__price">$0<span>/forever</span></p>
-          <ul>
-            <li>✓ Starter tracker &amp; reminders</li>
-            <li>✓ First course module</li>
-            <li>✓ A handful of core recipes</li>
-            <li>✓ Hydration calculator</li>
-          </ul>
-          <a class="btn btn--outline" href="#download">Get started</a>
+      <div class="beyond__grid">
+        <div class="feat reveal">
+          <div class="feat__icon">🫙</div>
+          <h3>Living starter tracker</h3>
+          <p>Status, feeds and a fridge-aware peak estimate tuned to your kitchen — so you never guess if it's ready.</p>
         </div>
-        <div class="plan plan--pro reveal" data-delay="1">
-          <span class="plan__badge">7-day free trial</span>
-          <h3>Premium</h3>
-          <p class="plan__price">$99.99<span>/year</span></p>
-          <p class="plan__perday">≈ $8.33/mo · billed annually — or <b>$14.99/month</b></p>
-          <ul>
-            <li>✓ <b>Everything</b> in Free</li>
-            <li>✓ Full 27-lesson course &amp; quizzes</li>
-            <li>✓ All 15 recipes + live bake mode</li>
-            <li>✓ Peak calculator, journal &amp; all tools</li>
-            <li>✓ Alternate app icons &amp; themes</li>
-          </ul>
-          <a class="btn btn--appstore btn--full" href="#download">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.2-1.12 2.99-.83.94-2.18 1.67-3.29 1.58-.14-1.11.44-2.28 1.12-3.02.77-.85 2.13-1.5 3.29-1.55zM20.9 17.13c-.58 1.34-.86 1.94-1.6 3.13-1.04 1.66-2.5 3.73-4.32 3.75-1.61.02-2.02-1.05-4.2-1.04-2.18.01-2.64 1.06-4.25 1.04-1.82-.02-3.2-1.88-4.24-3.54C-.03 17.62-.3 12.09 2.03 9.16 3.13 7.77 4.86 6.9 6.5 6.9c1.67 0 2.72 1.06 4.1 1.06 1.34 0 2.16-1.06 4.09-1.06 1.46 0 3.01.8 4.11 2.17-3.61 1.98-3.02 7.13.1 8.06z"/></svg>
-            <span><small>Try free on the</small><b>App Store</b></span>
-          </a>
+        <div class="feat reveal" data-delay="1">
+          <div class="feat__icon">🎓</div>
+          <h3>A real course</h3>
+          <p>27 lessons across 5 modules — ingredients, starter, method and troubleshooting — with quizzes and gentle gamification.</p>
+        </div>
+        <div class="feat reveal" data-delay="2">
+          <div class="feat__icon">🧰</div>
+          <h3>Baker's toolkit</h3>
+          <p>Hydration calculator, stacked bake timers, journal and shopping list — every tool a home baker reaches for, in one place.</p>
+        </div>
+        <div class="feat reveal" data-delay="3">
+          <div class="feat__icon">🔥</div>
+          <h3>Streaks &amp; badges</h3>
+          <p>Keep a baking streak and unlock badges as your skills rise. Small wins that keep you coming back to the oven.</p>
         </div>
       </div>
     </section>
 
-    <!-- ░░ FINAL CTA ░░ -->
-    <section class="cta" id="download">
-      <div class="cta__grain" aria-hidden="true"></div>
-      <div class="cta__inner reveal">
-        <img class="cta__icon" src="assets/icon-jar.png" alt="Levain app icon" />
-        <h2>Your best loaf is<br />one feed away.</h2>
-        <p>Download Levain and turn a jar of flour and water into something worth sharing.</p>
-        <a class="btn btn--appstore btn--lg" href="#">
+    <!-- ░░ FAQ ░░ -->
+    <section class="faq" id="faq">
+      <div class="section-head reveal">
+        <span class="pill-label">Got questions?</span>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq__list reveal">
+        <details class="qa">
+          <summary>What exactly is Levain?<span class="chev">⌄</span></summary>
+          <div class="qa__body">The all-in-one sourdough companion: a full course, a living starter tracker, a recipe library with guided bake mode, and a toolkit of calculators and timers — all bundled into one warm, offline app.</div>
+        </details>
+        <details class="qa">
+          <summary>I'm a total beginner — is this for me?<span class="chev">⌄</span></summary>
+          <div class="qa__body">Absolutely. The course starts from your very first feed and explains the <em>why</em>, not just the steps. Pair it with the beginner recipes and Levain walks you all the way to your first loaf.</div>
+        </details>
+        <details class="qa">
+          <summary>How does the peak estimate work?<span class="chev">⌄</span></summary>
+          <div class="qa__body">Levain factors in your feed ratio, ambient temperature and whether the starter is on the counter or in the fridge, then shows a live rise curve with the moment it peaks — the sweet spot to bake.</div>
+        </details>
+        <details class="qa">
+          <summary>Does it really work offline?<span class="chev">⌄</span></summary>
+          <div class="qa__body">100%. No account, no cloud, no tracking. Every lesson, recipe and tool is bundled with the app and lives on your device — it works on a plane with zero signal.</div>
+        </details>
+        <details class="qa">
+          <summary>What's the difference between Free and Premium?<span class="chev">⌄</span></summary>
+          <div class="qa__body">Free gives you the starter tracker, the first course module, a handful of core recipes and the hydration calculator. Premium unlocks the full 27-lesson course, all 15 recipes with bake mode, the peak calculator, journal and every tool — with a 7-day free trial ($14.99/month or $99.99/year).</div>
+        </details>
+        <details class="qa">
+          <summary>Which devices are supported?<span class="chev">⌄</span></summary>
+          <div class="qa__body">iPhone on iOS 16 and later, in English, Português and Español. Levain follows your system light or dark theme automatically.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ░░ DOWNLOAD / FOOTER ░░ -->
+    <footer class="footer" id="download">
+      <div class="footer__cta reveal">
+        <a class="brand brand--lg" href="#top"><img class="brand__mark" src="assets/icon.png" alt="" /><span class="brand__word">Levain</span></a>
+        <p class="footer__tagline">Turn a jar of flour and water<br />into something worth sharing.</p>
+        <a class="badge-store" href="#" aria-label="Download on the App Store">
           <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.2-1.12 2.99-.83.94-2.18 1.67-3.29 1.58-.14-1.11.44-2.28 1.12-3.02.77-.85 2.13-1.5 3.29-1.55zM20.9 17.13c-.58 1.34-.86 1.94-1.6 3.13-1.04 1.66-2.5 3.73-4.32 3.75-1.61.02-2.02-1.05-4.2-1.04-2.18.01-2.64 1.06-4.25 1.04-1.82-.02-3.2-1.88-4.24-3.54C-.03 17.62-.3 12.09 2.03 9.16 3.13 7.77 4.86 6.9 6.5 6.9c1.67 0 2.72 1.06 4.1 1.06 1.34 0 2.16-1.06 4.09-1.06 1.46 0 3.01.8 4.11 2.17-3.61 1.98-3.02 7.13.1 8.06z"/></svg>
           <span><small>Download on the</small><b>App Store</b></span>
         </a>
-        <p class="cta__note">iPhone · iOS 16+ · Free 7-day trial</p>
       </div>
-    </section>
+      <div class="footer__cols" id="contact">
+        <div><h4>Legal</h4>
+          <a href="https://oviniciusramosp.github.io/bread-legal/legal/privacy-policy-en.html">Privacy Policy</a>
+          <a href="https://oviniciusramosp.github.io/bread-legal/legal/terms-of-service-en.html">Terms of Service</a>
+        </div>
+        <div><h4>Contact</h4>
+          <a href="mailto:oviniciusramos@gmail.com">Support</a>
+          <a href="mailto:oviniciusramos@gmail.com">oviniciusramos@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© 2026 Levain. All rights reserved.</span>
+        <span>levain-app.com</span>
+      </div>
+    </footer>
   </main>
-
-  <!-- ░░ FOOTER ░░ -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__brand">
-        <a class="brand" href="#top"><img class="brand__mark" src="assets/icon-jar.png" alt="" /><span class="brand__word">Levain</span></a>
-        <p>Made with warm hands for home bakers.</p>
-      </div>
-      <nav class="footer__cols">
-        <div><h4>App</h4><a href="#learn">Course</a><a href="#track">Starter</a><a href="#recipes">Recipes</a><a href="#pricing">Pricing</a></div>
-        <div><h4>Legal</h4><a href="https://oviniciusramosp.github.io/bread-legal/legal/privacy-policy-en.html">Privacy Policy</a><a href="https://oviniciusramosp.github.io/bread-legal/legal/terms-of-service-en.html">Terms of Service</a></div>
-        <div><h4>Contact</h4><a href="mailto:oviniciusramos@gmail.com">oviniciusramos@gmail.com</a><a href="mailto:oviniciusramos@gmail.com">Support</a></div>
-      </nav>
-    </div>
-    <div class="footer__bar">
-      <span>© 2026 Levain. All rights reserved.</span>
-      <span>levain-app.com</span>
-    </div>
-  </footer>
 
   <script src="main.js"></script>
 </body>
