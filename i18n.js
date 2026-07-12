@@ -13,7 +13,7 @@
     'pt-BR': {
       'nav.home': 'Início', 'nav.features': 'Recursos', 'nav.faq': 'Dúvidas', 'nav.contact': 'Contato', 'nav.download': 'Baixar',
       'hero.rating': 'Amado por padeiros caseiros · <b>★ 4.8</b>',
-      'hero.h1': 'Faça pão natural de verdade.<br /><span class="hl">Sem achismo.</span>',
+      'hero.h1': 'Faça pão de fermentação natural.<br /><span class="hl">Sem achismo.</span>',
       'hero.sub': 'O Levain é o app completo de fermentação natural — aprenda a técnica, acompanhe o pico do seu fermento e siga receitas com timers inteligentes. Bonito e 100% offline.',
       'store.small': 'Baixe na',
       'how.label': 'Como funciona',
@@ -157,9 +157,8 @@
       a.href = `${LEGAL_BASE}/${a.getAttribute('data-doc')}-${docSuffix[lang]}.html`;
     });
     document.documentElement.lang = lang === 'pt-BR' ? 'pt-BR' : lang;
-    document.querySelectorAll('.lang-switch button').forEach((b) => {
-      b.classList.toggle('is-active', b.dataset.lang === lang);
-    });
+    const sel = document.getElementById('langSelect');
+    if (sel && sel.value !== lang) sel.value = lang;
     current = lang;
   }
 
@@ -174,10 +173,12 @@
   let current = saved && LANGS.includes(saved) ? saved : normalize(navigator.language || (navigator.languages || [])[0]);
   apply(current);
 
-  // footer switcher
-  document.querySelectorAll('.lang-switch button').forEach((b) => {
-    b.addEventListener('click', () => choose(b.dataset.lang));
-  });
+  // footer dropdown
+  const langSelect = document.getElementById('langSelect');
+  if (langSelect) {
+    langSelect.value = current;
+    langSelect.addEventListener('change', () => choose(langSelect.value));
+  }
 
   // ---- Apple-style geo suggestion banner ----
   let banner;
@@ -208,19 +209,31 @@
     es: { msg: '¿Prefieres ver este sitio en Español?', go: 'Cambiar a Español', close: 'Cerrar' },
   };
 
+  // Detect country, trying a couple of free CORS endpoints (one may be blocked/down).
+  async function detectCountry() {
+    const sources = [
+      ['https://ipwho.is/?fields=country_code', (j) => j.country_code],
+      ['https://get.geojs.io/v1/ip/country.json', (j) => j.country],
+    ];
+    for (const [url, pick] of sources) {
+      try {
+        const ctrl = new AbortController();
+        const to = setTimeout(() => ctrl.abort(), 3000);
+        const r = await fetch(url, { signal: ctrl.signal });
+        clearTimeout(to);
+        const cc = (pick(await r.json()) || '').toUpperCase();
+        if (cc) return cc;
+      } catch (e) { /* try next source */ }
+    }
+    return null;
+  }
+
   // Only suggest if the user hasn't picked a language and hasn't dismissed before.
   if (!saved && !localStorage.getItem(KEY_GEO)) {
-    const ctrl = new AbortController();
-    const to = setTimeout(() => ctrl.abort(), 3500);
-    fetch('https://ipwho.is/?fields=country_code', { signal: ctrl.signal })
-      .then((r) => r.json())
-      .then((j) => {
-        clearTimeout(to);
-        const cc = (j && (j.country_code || j.countryCode) || '').toUpperCase();
-        if (!cc) return;
-        const suggest = countryToLang(cc);
-        if (suggest !== current) showBanner(suggest);
-      })
-      .catch(() => {}); // geo unavailable → no banner, page already in browser language
+    detectCountry().then((cc) => {
+      if (!cc) return; // geo unavailable → no banner, page already in browser language
+      const suggest = countryToLang(cc);
+      if (suggest !== current) showBanner(suggest);
+    });
   }
 })();

@@ -268,19 +268,27 @@ h1, h2, h3 { font-weight: 800; line-height: 1.05; letter-spacing: -.035em; }
 .lang-banner__x:hover { opacity: 1; }
 html.banner-open .nav { top: 44px; }
 
-/* ══════════════ FOOTER LANGUAGE SWITCH ══════════════ */
-.lang-switch {
-  display: flex; align-items: center; justify-content: center; gap: .35rem; flex-wrap: wrap;
-  padding: 1.6rem 0; border-top: 1px solid var(--line);
+/* ══════════════ FOOTER LANGUAGE DROPDOWN ══════════════ */
+.lang-switch { display: flex; justify-content: center; padding: 1.6rem 0; border-top: 1px solid var(--line); }
+.lang-select {
+  position: relative; display: inline-flex; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+  padding: 0 2.2rem 0 .9rem; height: 42px;
+  transition: border-color .2s, box-shadow .2s;
 }
-.lang-switch__label { font-size: .82rem; color: var(--ink-soft); margin-right: .5rem; }
-.lang-switch button {
-  background: transparent; border: 1px solid var(--line); color: var(--ink); cursor: pointer;
-  font-family: var(--font); font-size: .85rem; font-weight: 500; padding: .4rem .85rem; border-radius: 999px;
-  transition: border-color .2s, color .2s, background .2s;
+.lang-select:hover { border-color: var(--mustard-deep); }
+.lang-select:focus-within { border-color: var(--mustard-deep); box-shadow: 0 0 0 3px rgba(210,146,45,.18); }
+.lang-select__globe { color: var(--mustard-deep); flex: none; margin-right: .55rem; }
+.lang-select select {
+  appearance: none; -webkit-appearance: none; -moz-appearance: none;
+  background: transparent; border: 0; outline: none; cursor: pointer;
+  font-family: var(--font); font-size: .92rem; font-weight: 600; color: var(--ink);
+  padding: .5rem 0; line-height: 1;
 }
-.lang-switch button:hover { border-color: var(--mustard-deep); color: var(--mustard-deep); }
-.lang-switch button.is-active { background: var(--mustard-deep); border-color: var(--mustard-deep); color: #fff; }
+.lang-select__chev {
+  position: absolute; right: .9rem; top: 50%; transform: translateY(-58%);
+  color: var(--mustard-deep); font-size: 1.2rem; pointer-events: none;
+}
 
 /* ══════════════ RESPONSIVE ══════════════ */
 @media (max-width: 900px) {
