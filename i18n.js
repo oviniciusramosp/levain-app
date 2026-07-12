@@ -159,6 +159,11 @@
     document.documentElement.lang = lang === 'pt-BR' ? 'pt-BR' : lang;
     const sel = document.getElementById('langSelect');
     if (sel && sel.value !== lang) sel.value = lang;
+    // Hero screenshots: light variant per language (es falls back to en).
+    const shotDir = { 'pt-BR': 'pt-br', en: 'en', es: 'en' }[lang] || 'en';
+    document.querySelectorAll('.shot').forEach((img) => {
+      img.src = `assets/screenshots/${shotDir}/${img.dataset.shot}-light.PNG`;
+    });
     current = lang;
   }
 
