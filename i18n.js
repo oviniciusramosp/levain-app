@@ -11,7 +11,7 @@
   // Only pt-BR and es need translating; en is read from the page.
   const T = {
     'pt-BR': {
-      'nav.home': 'Início', 'nav.features': 'Recursos', 'nav.faq': 'Dúvidas', 'nav.contact': 'Contato', 'nav.download': 'Baixar',
+      'nav.home': 'Início', 'nav.features': 'Recursos', 'nav.faq': 'Dúvidas', 'nav.contact': 'Contato', 'nav.download': 'Baixar App',
       'hero.rating': 'Amado por padeiros caseiros · <b>★ 4.8</b>',
       'hero.h1': 'Faça pão de fermentação natural.<br /><span class="hl">Sem achismo.</span>',
       'hero.sub': 'Aprenda fermentação natural num curso estilo Duolingo — com embasamento científico e a vivência de padeiros experientes e cientistas da fermentação. E deixe as ferramentas inteligentes tirarem o achismo de cada fornada.',
@@ -69,7 +69,7 @@
       'm.crust': 'Crosta', 'm.crumb': 'Miolo', 'm.streak4': 'Sequência de 4', 'm.keepGoing': 'continue assim',
     },
     es: {
-      'nav.home': 'Inicio', 'nav.features': 'Funciones', 'nav.faq': 'Preguntas', 'nav.contact': 'Contacto', 'nav.download': 'Descargar',
+      'nav.home': 'Inicio', 'nav.features': 'Funciones', 'nav.faq': 'Preguntas', 'nav.contact': 'Contacto', 'nav.download': 'Descargar App',
       'hero.rating': 'Amado por panaderos caseros · <b>★ 4.8</b>',
       'hero.h1': 'Haz pan de masa madre.<br /><span class="hl">Sin adivinar.</span>',
       'hero.sub': 'Aprende masa madre con un curso al estilo Duolingo — con base científica y la experiencia de panaderos expertos e investigadores de la fermentación. Y deja que las herramientas inteligentes le quiten la adivinación a cada horneada.',

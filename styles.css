@@ -28,6 +28,7 @@
 
   --font: 'Inter', system-ui, -apple-system, sans-serif;
   --font-hand: 'Caveat', cursive;
+  --font-brand: 'Beth Ellen', cursive; /* app wordmark */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -86,7 +87,7 @@ h1, h2, h3 { font-weight: 800; line-height: 1.05; letter-spacing: -.035em; }
 .nav__inner { max-width: var(--maxw); margin: 0 auto; padding: .8rem 1.4rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; gap: .55rem; }
 .brand__mark { width: 34px; height: 34px; border-radius: 9px; box-shadow: var(--shadow-sm); }
-.brand__word { font-family: var(--font-hand); font-size: 1.7rem; font-weight: 700; color: var(--ink); line-height: 1; }
+.brand__word { font-family: var(--font-brand); font-size: 1.5rem; font-weight: 400; letter-spacing: -.03em; color: var(--ink); line-height: 1; }
 .nav__links { display: flex; gap: 2rem; }
 .nav__links a { font-weight: 500; font-size: .93rem; color: var(--ink); opacity: .8; transition: opacity .2s, color .2s; }
 .nav__links a:hover { opacity: 1; color: var(--mustard-deep); }
