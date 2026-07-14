@@ -323,11 +323,12 @@ html.banner-open .nav { top: 44px; }
   appearance: none; -webkit-appearance: none; -moz-appearance: none;
   background: transparent; border: 0; outline: none; cursor: pointer;
   font-family: var(--font); font-size: .92rem; font-weight: 600; color: var(--ink);
-  padding: .5rem 0; line-height: 1;
+  /* line-height must leave room for descenders (the "g" in Português/English) */
+  padding: .4rem 0; line-height: 1.5;
 }
 .lang-select__chev {
-  position: absolute; right: .9rem; top: 50%; transform: translateY(-58%);
-  color: var(--mustard-deep); font-size: 1.2rem; pointer-events: none;
+  position: absolute; right: .9rem; top: 50%; transform: translateY(-50%);
+  color: var(--mustard-deep); pointer-events: none;
 }
 
 /* ══════════════ CONTACT MODAL ══════════════ */
