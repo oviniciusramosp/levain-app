@@ -24,7 +24,7 @@ items.forEach((d) => d.addEventListener('toggle', () => {
    The form posts to Web3Forms, which holds the destination address
    server-side — the site never exposes an email address.
    Get a key at https://web3forms.com (free) and paste it below. */
-const WEB3FORMS_KEY = 'PASTE-YOUR-WEB3FORMS-ACCESS-KEY-HERE';
+const WEB3FORMS_KEY = '7971e1c6-68d7-45c1-8677-47343c0cafa8';
 
 const modal = document.getElementById('contactModal');
 const form = document.getElementById('contactForm');
@@ -58,26 +58,20 @@ form.addEventListener('submit', async (e) => {
   if (!form.reportValidity()) return;
 
   const btn = form.querySelector('.modal__submit');
-  const data = Object.fromEntries(new FormData(form));
 
   btn.disabled = true;
   status.className = 'modal__status';
   status.textContent = t('contact.sending', 'Sending…');
 
+  // Send as FormData (multipart): a CORS "simple request", so no preflight.
+  // A JSON body would trigger an OPTIONS preflight, which the API rejects.
+  const fd = new FormData(form);
+  fd.append('access_key', WEB3FORMS_KEY);
+  fd.append('subject', 'Levain - Support (Site)');
+  fd.append('from_name', 'Levain Site');
+
   try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({
-        access_key: WEB3FORMS_KEY,
-        subject: 'Levain - Support (Site)',
-        from_name: 'Levain Site',
-        name: data.name,
-        email: data.email,
-        message: data.message,
-        botcheck: data.botcheck ? true : false,
-      }),
-    });
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd });
     const json = await res.json();
     if (!json.success) throw new Error(json.message || 'failed');
 
