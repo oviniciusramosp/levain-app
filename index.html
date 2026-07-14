@@ -35,7 +35,7 @@
         <a href="#top" data-i18n="nav.home">Home</a>
         <a href="#features" data-i18n="nav.features">Features</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#" data-contact data-i18n="nav.contact">Contact</a>
       </nav>
       <a class="btn btn--dark" href="#download" data-i18n="nav.download">Download App</a>
     </div>
@@ -241,7 +241,7 @@
           <a data-doc="terms-of-service" href="https://oviniciusramosp.github.io/bread-legal/legal/terms-of-service-en.html" data-i18n="footer.terms">Terms of Service</a>
         </div>
         <div><h4 data-i18n="footer.contact">Contact</h4>
-          <a href="mailto:oviniciusramos@gmail.com" data-i18n="footer.support">Support</a>
+          <a href="#" data-contact data-i18n="footer.support">Support</a>
           <div class="socials">
             <a href="https://www.instagram.com/levain.app" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
@@ -266,6 +266,35 @@
       </div>
     </footer>
   </main>
+
+  <!-- ░░ CONTACT MODAL ░░ -->
+  <div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__x" type="button" data-close aria-label="Close">✕</button>
+      <h3 id="contactTitle" data-i18n="contact.title">Get in touch</h3>
+      <p class="modal__sub" data-i18n="contact.sub">Questions, bugs or ideas? Send a message and we'll get back to you by email.</p>
+
+      <form id="contactForm" novalidate>
+        <label class="field">
+          <span data-i18n="contact.name">Name</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label class="field">
+          <span data-i18n="contact.email">Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label class="field">
+          <span data-i18n="contact.message">Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <!-- honeypot: hidden from humans, bots fill it in -->
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+        <button class="btn btn--dark modal__submit" type="submit" data-i18n="contact.send">Send message</button>
+        <p class="modal__status" id="contactStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
 
   <script src="i18n.js"></script>
   <script src="main.js"></script>

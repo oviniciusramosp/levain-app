@@ -48,6 +48,12 @@
       'faq.a5': 'O plano Grátis inclui o monitor de fermento, o primeiro módulo do curso, algumas receitas essenciais e a calculadora de hidratação. O Premium libera o curso completo de 27 aulas, as 15 receitas com modo de fornada, a calculadora de pico, o diário e todas as ferramentas — com 7 dias grátis (US$ 14,99/mês ou US$ 99,99/ano).',
       'faq.q6': 'Quais dispositivos são compatíveis?',
       'faq.a6': 'iPhone com iOS 16 ou superior, em Inglês, Português e Espanhol. O Levain segue automaticamente o tema claro ou escuro do sistema.',
+      'contact.title': 'Fale com a gente',
+      'contact.sub': 'Dúvidas, bugs ou ideias? Mande uma mensagem que respondemos por e-mail.',
+      'contact.name': 'Nome', 'contact.email': 'E-mail', 'contact.message': 'Mensagem',
+      'contact.send': 'Enviar mensagem', 'contact.sending': 'Enviando…',
+      'contact.ok': 'Mensagem enviada! Responderemos por e-mail em breve.',
+      'contact.err': 'Algo deu errado. Tente novamente.',
       'footer.tagline': 'Transforme um pote de farinha e água<br />em algo que vale a pena compartilhar.',
       'footer.legal': 'Legal', 'footer.privacy': 'Política de Privacidade', 'footer.terms': 'Termos de Uso',
       'footer.contact': 'Contato', 'footer.support': 'Suporte', 'footer.language': 'Idioma',
@@ -106,6 +112,12 @@
       'faq.a5': 'El plan Gratis incluye el monitor de fermento, el primer módulo del curso, algunas recetas esenciales y la calculadora de hidratación. Premium desbloquea el curso completo de 27 lecciones, las 15 recetas con modo de horneado, la calculadora de punto máximo, el diario y todas las herramientas — con 7 días gratis (US$ 14,99/mes o US$ 99,99/año).',
       'faq.q6': '¿Qué dispositivos son compatibles?',
       'faq.a6': 'iPhone con iOS 16 o superior, en Inglés, Português y Español. Levain sigue automáticamente el tema claro u oscuro del sistema.',
+      'contact.title': 'Hablemos',
+      'contact.sub': '¿Dudas, errores o ideas? Envía un mensaje y te respondemos por correo.',
+      'contact.name': 'Nombre', 'contact.email': 'Correo', 'contact.message': 'Mensaje',
+      'contact.send': 'Enviar mensaje', 'contact.sending': 'Enviando…',
+      'contact.ok': '¡Mensaje enviado! Te responderemos por correo pronto.',
+      'contact.err': 'Algo salió mal. Inténtalo de nuevo.',
       'footer.tagline': 'Convierte un frasco de harina y agua<br />en algo que vale la pena compartir.',
       'footer.legal': 'Legal', 'footer.privacy': 'Política de Privacidad', 'footer.terms': 'Términos de Servicio',
       'footer.contact': 'Contacto', 'footer.support': 'Soporte', 'footer.language': 'Idioma',
@@ -181,6 +193,16 @@
   const saved = localStorage.getItem(KEY_LANG);
   let current = saved && LANGS.includes(saved) ? saved : normalize(navigator.language || (navigator.languages || [])[0]);
   apply(current);
+
+  // Runtime lookup for strings not present in the DOM (modal status messages).
+  // For 'en' there is no dictionary, so the caller's fallback is used.
+  window.LevainI18n = {
+    t(key, fallback) {
+      const dict = T[current];
+      return dict && dict[key] != null ? dict[key] : fallback;
+    },
+    get lang() { return current; },
+  };
 
   // footer dropdown
   const langSelect = document.getElementById('langSelect');
