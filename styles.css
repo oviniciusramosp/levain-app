@@ -43,6 +43,18 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3 { font-weight: 800; line-height: 1.05; letter-spacing: -.035em; }
 .hl { color: var(--mustard-deep); }
 
+/* No orphan words.
+   `balance` evens out heading line lengths; `pretty` stops body copy from
+   leaving a single word alone on the last line. Both degrade to normal
+   wrapping on older browsers, so nothing breaks.
+   The hero h1 is exempt: it's display-sized and breaks on explicit <br>. */
+h1, h2, h3, h4, .pill-label, .rating__text { text-wrap: balance; }
+p, li, summary, figcaption, .qa__body, .field > span, .btn, .badge-store b { text-wrap: pretty; }
+/* Short copy blocks: `balance` evens the lines outright, which `pretty`
+   can't always manage inside narrow columns. */
+.feat p, .step > p, .section-sub, .hero__sub, .modal__sub, .footer__tagline, .footer__brand p { text-wrap: balance; }
+.hero h1 { text-wrap: wrap; }
+
 /* ───── Buttons / badges ───── */
 .btn {
   display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; font-size: .95rem;
@@ -374,6 +386,13 @@ html.banner-open .nav { top: 44px; }
 .modal__status.err { color: #C53030; }
 
 /* ══════════════ RESPONSIVE ══════════════ */
+/* 4 feature columns get too cramped below ~1080px: the copy overflows the
+   line count where text-wrap:balance gives up, which reintroduces orphans.
+   Drop to 2 columns while there's still room. */
+@media (max-width: 1080px) {
+  .beyond__grid { grid-template-columns: 1fr 1fr; gap: 2rem 2.2rem; }
+}
+
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; text-align: center; gap: 2.5rem; }
   .hero__copy { display: flex; flex-direction: column; align-items: center; width: 100%; }
