@@ -257,7 +257,7 @@ h1, h2, h3 { font-weight: 800; line-height: 1.05; letter-spacing: -.035em; }
 .qa { border-bottom: 1px solid var(--line); }
 .qa summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem .4rem; font-weight: 600; font-size: 1.05rem; color: var(--ink); }
 .qa summary::-webkit-details-marker { display: none; }
-.qa .chev { color: var(--mustard-deep); font-size: 1.4rem; line-height: 1; transition: transform .3s var(--ease); flex: none; }
+.qa .chev { color: var(--mustard-deep); flex: none; transition: transform .3s var(--ease); }
 .qa[open] .chev { transform: rotate(180deg); }
 .qa__body { padding: 0 .4rem 1.3rem; color: var(--ink-soft); font-size: .98rem; max-width: 62ch; }
 .qa__body em { color: var(--mustard-dark); font-style: italic; }
@@ -272,13 +272,13 @@ h1, h2, h3 { font-weight: 800; line-height: 1.05; letter-spacing: -.035em; }
 .footer__cols h4 { font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-soft); margin-bottom: .9rem; font-weight: 700; }
 .footer__cols a { display: block; font-size: .93rem; margin-bottom: .55rem; color: var(--ink); opacity: .85; transition: color .2s, opacity .2s; }
 .footer__cols a:hover { color: var(--mustard-deep); opacity: 1; }
-.socials { display: flex; gap: .5rem; margin-top: .9rem; }
-.socials a {
-  display: grid; place-items: center; width: 38px; height: 38px; margin: 0;
+.socials { display: flex; gap: .5rem; }
+.socials a, .socials button {
+  display: grid; place-items: center; width: 38px; height: 38px; margin: 0; padding: 0;
   border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--ink);
-  transition: border-color .2s, color .2s, transform .2s;
+  cursor: pointer; transition: border-color .2s, color .2s, transform .2s;
 }
-.socials a:hover { border-color: var(--mustard-deep); color: var(--mustard-deep); transform: translateY(-2px); }
+.socials a:hover, .socials button:hover { border-color: var(--mustard-deep); color: var(--mustard-deep); transform: translateY(-2px); }
 .socials svg { width: 18px; height: 18px; fill: currentColor; }
 .footer__bar {
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;

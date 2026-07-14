@@ -154,6 +154,11 @@
   const EN = {};
   els.forEach((el) => { EN[el.getAttribute('data-i18n')] = el.innerHTML; });
 
+  // Icon-only controls carry their label in aria-label — translate that too.
+  const ariaEls = document.querySelectorAll('[data-i18n-aria]');
+  const EN_ARIA = {};
+  ariaEls.forEach((el) => { EN_ARIA[el.getAttribute('data-i18n-aria')] = el.getAttribute('aria-label'); });
+
   const normalize = (l) => {
     l = (l || '').toLowerCase();
     if (l.startsWith('pt')) return 'pt-BR';
@@ -168,6 +173,11 @@
       const v = dict[k] != null ? dict[k] : EN[k];
       if (v == null) return;
       if (/[<&]/.test(v)) el.innerHTML = v; else el.textContent = v;
+    });
+    ariaEls.forEach((el) => {
+      const k = el.getAttribute('data-i18n-aria');
+      const v = dict[k] != null ? dict[k] : EN_ARIA[k];
+      if (v != null) el.setAttribute('aria-label', v);
     });
     legalLinks.forEach((a) => {
       a.href = `${LEGAL_BASE}/${a.getAttribute('data-doc')}-${docSuffix[lang]}.html`;
