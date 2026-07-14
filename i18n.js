@@ -1,4 +1,4 @@
-/* Levain landing — i18n + IP-based language suggestion (Apple-style banner).
+/* Levain landing: i18n + IP-based language suggestion (Apple-style banner).
    Static site: default = browser language; geo lookup only *suggests* a switch.
    English is captured from the DOM (the HTML is the source of truth for en). */
 
@@ -154,7 +154,7 @@
   const EN = {};
   els.forEach((el) => { EN[el.getAttribute('data-i18n')] = el.innerHTML; });
 
-  // Icon-only controls carry their label in aria-label — translate that too.
+  // Icon-only controls carry their label in aria-label, so translate that too.
   const ariaEls = document.querySelectorAll('[data-i18n-aria]');
   const EN_ARIA = {};
   ariaEls.forEach((el) => { EN_ARIA[el.getAttribute('data-i18n-aria')] = el.getAttribute('aria-label'); });

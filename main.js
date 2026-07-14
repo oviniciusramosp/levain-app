@@ -1,4 +1,4 @@
-// Levain landing — progressive enhancement. Page works without JS (FAQ uses native <details>).
+// Levain landing: progressive enhancement. Page works without JS (FAQ uses native <details>).
 
 // Navbar background on scroll
 const nav = document.getElementById('nav');
@@ -22,7 +22,7 @@ items.forEach((d) => d.addEventListener('toggle', () => {
 
 /* ── Contact modal ──────────────────────────────────────────────
    The form posts to Web3Forms, which holds the destination address
-   server-side — the site never exposes an email address.
+   server-side, so the site never exposes an email address.
    Get a key at https://web3forms.com (free) and paste it below. */
 const WEB3FORMS_KEY = '7971e1c6-68d7-45c1-8677-47343c0cafa8';
 

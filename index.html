@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
 
@@ -238,9 +238,8 @@
       <div class="footer__cols" id="contact">
         <div><h4 data-i18n="footer.contact">Contact</h4>
           <div class="socials">
-            <button type="button" class="socials__label" data-contact>
+            <button type="button" data-contact data-i18n-aria="footer.support" aria-label="Support">
               <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"/></svg>
-              <span data-i18n="footer.support">Support</span>
             </button>
             <a href="https://www.instagram.com/levain.app" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
@@ -299,7 +298,7 @@
     </div>
   </div>
 
-  <script src="i18n.js"></script>
-  <script src="main.js"></script>
+  <script src="i18n.js?v=3"></script>
+  <script src="main.js?v=3"></script>
 </body>
 </html>
