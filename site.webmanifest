@@ -1,0 +1,12 @@
+{
+  "name": "Levain",
+  "short_name": "Levain",
+  "description": "The all-in-one sourdough app: a Duolingo-style course, starter tracker, recipes and smart baking tools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1F0ED",
+  "theme_color": "#F1F0ED",
+  "icons": [
+    { "src": "assets/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://levain-app.com/sitemap.xml

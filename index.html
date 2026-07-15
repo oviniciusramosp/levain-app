@@ -4,23 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Levain | Bake Real Sourdough, Skip the Guesswork</title>
-  <meta name="description" content="Learn sourdough with a Duolingo-style course grounded in real science and the experience of expert bakers, plus smart tools that take the guesswork out of every bake." />
+  <meta name="description" content="Learn sourdough with a Duolingo-style course grounded in real science and the experience of expert bakers, plus smart tools that take the guesswork out of every bake. Free on iPhone." />
   <meta name="theme-color" content="#F1F0ED" />
+  <meta name="author" content="Levain" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://levain-app.com/" />
 
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Levain" />
   <meta property="og:title" content="Levain | Bake Real Sourdough, Skip the Guesswork" />
   <meta property="og:description" content="A Duolingo-style sourdough course built on real science and the experience of expert bakers and fermentation researchers, plus smart tools for every bake." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://levain-app.com" />
-  <meta property="og:image" content="https://levain-app.com/assets/icon.png" />
+  <meta property="og:url" content="https://levain-app.com/" />
+  <meta property="og:image" content="https://levain-app.com/assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Levain — the all-in-one sourdough app" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Levain | Bake Real Sourdough, Skip the Guesswork" />
+  <meta name="twitter:description" content="A Duolingo-style sourdough course grounded in real science, plus smart tools for your starter and every bake. Free on iPhone." />
+  <meta name="twitter:image" content="https://levain-app.com/assets/og-cover.png" />
 
   <link rel="icon" href="assets/icon.png" />
   <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css?v=3" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://levain-app.com/#website",
+        "url": "https://levain-app.com/",
+        "name": "Levain",
+        "description": "The all-in-one sourdough app: a Duolingo-style course, starter tracker, recipes and smart baking tools.",
+        "inLanguage": ["en", "pt-BR", "es"],
+        "publisher": { "@id": "https://levain-app.com/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://levain-app.com/#org",
+        "name": "Levain",
+        "url": "https://levain-app.com/",
+        "logo": "https://levain-app.com/assets/icon.png",
+        "sameAs": [
+          "https://www.instagram.com/levain.app",
+          "https://www.tiktok.com/@levain.app"
+        ]
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://levain-app.com/#app",
+        "name": "Levain",
+        "operatingSystem": "iOS 16.0 or later",
+        "applicationCategory": "LifestyleApplication",
+        "url": "https://levain-app.com/",
+        "image": "https://levain-app.com/assets/icon.png",
+        "description": "Learn sourdough with a Duolingo-style course grounded in real science and the experience of expert bakers, plus smart tools to keep your starter healthy and follow recipes with guided timers. Works 100% offline.",
+        "inLanguage": ["en", "pt-BR", "es"],
+        "author": { "@id": "https://levain-app.com/#org" },
+        "offers": [
+          { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Premium (monthly)", "price": "14.99", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Premium (yearly)", "price": "99.99", "priceCurrency": "USD" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://levain-app.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What exactly is Levain?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The all-in-one sourdough companion: a full course, a living starter tracker, a recipe library with guided bake mode, and a toolkit of calculators and timers, all bundled into one warm, offline app." }
+          },
+          {
+            "@type": "Question",
+            "name": "I'm a total beginner. Is this for me?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. The course starts from your very first feed and explains the why, not just the steps. Pair it with the beginner recipes and Levain walks you all the way to your first loaf." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the peak estimate work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Levain factors in your feed ratio, ambient temperature and whether the starter is on the counter or in the fridge, then shows a live rise curve with the moment it peaks, the sweet spot to bake." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it really work offline?",
+            "acceptedAnswer": { "@type": "Answer", "text": "100%. No account, no cloud, no tracking. Every lesson, recipe and tool is bundled with the app and lives on your device. It works on a plane with zero signal." }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between Free and Premium?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Free gives you the starter tracker, the first course module, a handful of core recipes and the hydration calculator. Premium unlocks the full 27-lesson course, all 15 recipes with bake mode, the peak calculator, journal and every tool, with a 7-day free trial ($14.99/month or $99.99/year)." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which devices are supported?",
+            "acceptedAnswer": { "@type": "Answer", "text": "iPhone on iOS 16 and later, in English, Portugues and Espanol. Levain follows your system light or dark theme automatically." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -68,8 +168,8 @@
         </div>
 
         <div class="hero__devices reveal" data-delay="2">
-          <img class="shot shot--back" data-shot="02" src="assets/screenshots/en/02-light.png" alt="Levain app screen" width="480" height="988" />
-          <img class="shot shot--front" data-shot="01" src="assets/screenshots/en/01-light.png" alt="Levain app screen" width="480" height="988" />
+          <img class="shot shot--back" data-shot="02" src="assets/screenshots/en/02-light.png" alt="Levain recipe screen showing a guided sourdough bake" width="480" height="988" loading="eager" decoding="async" />
+          <img class="shot shot--front" data-shot="01" src="assets/screenshots/en/01-light.png" alt="Levain home screen with sourdough starter status and course progress" width="480" height="988" fetchpriority="high" decoding="async" />
         </div>
       </div>
     </section>
