@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Levain — App de Masa Madre: Curso, Monitor de Fermento y Recetas</title>
+  <meta name="description" content="La app todo-en-uno de masa madre: curso gamificado creado con panaderos expertos, monitor que predice el punto máximo del fermento y recetas guiadas. Gratis en iPhone." />
+  <meta name="theme-color" content="#F1F0ED" />
+  <meta name="author" content="Levain" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://levain-app.com/es/" />
+  <link rel="alternate" hreflang="en" href="https://levain-app.com/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://levain-app.com/pt/" />
+  <link rel="alternate" hreflang="es" href="https://levain-app.com/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://levain-app.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Levain" />
+  <meta property="og:title" content="Levain — App de Masa Madre: Curso, Monitor de Fermento y Recetas" />
+  <meta property="og:description" content="Aprende masa madre con un curso gamificado de lecciones cortas, creado con panaderos expertos, y herramientas que siguen tu fermento y cada horneada. Gratis en iPhone." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://levain-app.com/es/" />
+  <meta property="og:image" content="https://levain-app.com/assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Levain — la app todo-en-uno de masa madre" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Levain — App de Masa Madre: Curso, Monitor de Fermento y Recetas" />
+  <meta name="twitter:description" content="Aprende masa madre con un curso gamificado de lecciones cortas y herramientas inteligentes para tu fermento. Gratis en iPhone." />
+  <meta name="twitter:image" content="https://levain-app.com/assets/og-cover.png" />
+
+  <link rel="icon" href="/assets/icon.png" />
+  <link rel="apple-touch-icon" href="/assets/icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Fonts load async so they don't block first paint; noscript keeps them for JS-off visitors. -->
+  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" /></noscript>
+
+  <link rel="stylesheet" href="/styles.css?v=4" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://levain-app.com/#website",
+      "url": "https://levain-app.com/",
+      "name": "Levain",
+      "description": "La app todo-en-uno de masa madre: curso gamificado, monitor de fermento, recetas y herramientas inteligentes.",
+      "inLanguage": [
+        "en",
+        "pt-BR",
+        "es"
+      ],
+      "publisher": {
+        "@id": "https://levain-app.com/#org"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://levain-app.com/#org",
+      "name": "Levain",
+      "url": "https://levain-app.com/",
+      "logo": "https://levain-app.com/assets/icon.png",
+      "sameAs": [
+        "https://www.instagram.com/levain.app",
+        "https://www.tiktok.com/@levain.app"
+      ]
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://levain-app.com/#app",
+      "name": "Levain",
+      "operatingSystem": "iOS 16.0 or later",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://levain-app.com/",
+      "image": "https://levain-app.com/assets/icon.png",
+      "description": "Aprende masa madre con un curso gamificado de lecciones cortas, basado en ciencia y en la experiencia de panaderos de verdad, además de herramientas para mantener el fermento saludable y seguir recetas con temporizadores guiados. Funciona 100% sin conexión.",
+      "inLanguage": [
+        "en",
+        "pt-BR",
+        "es"
+      ],
+      "author": {
+        "@id": "https://levain-app.com/#org"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium (monthly)",
+          "price": "14.99",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium (yearly)",
+          "price": "99.99",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://levain-app.com/es/#faq",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es exactamente Levain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El compañero todo-en-uno de la masa madre: un curso completo, un monitor de fermento vivo, una biblioteca de recetas con modo de horneado guiado y un kit de calculadoras y temporizadores, todo reunido en una app cálida y sin conexión."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Soy principiante total. ¿Es para mí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Claro que sí. El curso empieza desde tu primera alimentación y explica el porqué, no solo los pasos. Combínalo con las recetas para principiantes y Levain te acompaña hasta tu primer pan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona la estimación del punto máximo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Levain tiene en cuenta la proporción de alimentación, la temperatura ambiente y si el fermento está en la encimera o en la nevera, y muestra una curva de crecimiento en vivo con el momento del punto máximo, el momento ideal para hornear."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Funciona de verdad sin conexión?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100%. Sin cuenta, sin nube, sin rastreo. Cada lección, receta y herramienta viene con la app y vive en tu dispositivo. Funciona hasta en un avión sin señal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre Gratis y Premium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El plan Gratis incluye el monitor de fermento, el primer módulo del curso, algunas recetas esenciales y la calculadora de hidratación. Premium desbloquea el curso completo de 27 lecciones, toda la biblioteca de recetas con modo de horneado, la calculadora de punto máximo, el diario y todas las herramientas, con 7 días gratis (US$ 14,99/mes o US$ 99,99/año)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué dispositivos son compatibles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iPhone con iOS 16 o superior, en Inglés, Português y Español. Levain sigue automáticamente el tema claro u oscuro del sistema."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Levain home">
+        <img class="brand__mark" src="/assets/icon.png" alt="" />
+        <span class="brand__word">Levain</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#top" data-i18n="nav.home">Inicio</a>
+        <a href="#features" data-i18n="nav.features">Funciones</a>
+        <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="#" data-contact data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <a class="btn btn--dark" href="#download" data-i18n="nav.download">Descargar App</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <div class="rating reveal">
+            <div class="rating__avatars"><span></span><span></span><span></span></div>
+            <span class="rating__text" data-i18n="hero.rating">Amado por panaderos caseros · <b>★ 4.8</b></span>
+          </div>
+          <h1 class="reveal" data-delay="1" data-i18n="hero.h1">Haz pan de masa madre.<br /><span class="hl">Sin adivinar.</span></h1>
+          <p class="hero__sub reveal" data-delay="2" data-i18n="hero.sub">Aprende masa madre con un curso al estilo Duolingo, con base científica y la experiencia de panaderos expertos e investigadores de la fermentación. Y deja que las herramientas inteligentes se ocupen de los tiempos de cada horneada.</p>
+          <div class="hero__actions reveal" data-delay="3">
+            <a class="badge-store" href="#download" aria-label="Download on the App Store">
+              <svg class="store-apple" viewBox="0 0 512 512" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M349.13 136.86c-40.32 0-57.36 19.24-85.44 19.24-28.79 0-50.75-19.1-85.69-19.1-34.2 0-70.67 20.88-93.83 56.45-32.52 50.16-27 144.63 25.67 225.11 18.84 28.81 44 61.12 77 61.47h.6c28.68 0 37.2-18.78 76.67-19h.6c38.88 0 46.68 18.89 75.24 18.89h.6c33-.35 59.51-36.15 78.35-64.85 13.56-20.64 18.6-31 29-54.35-76.19-28.92-88.43-136.93-13.08-178.34-23-28.8-55.32-45.45-85.79-45.45z"/><path d="M340.25 32c-24 1.63-52 16.91-68.4 36.86-14.88 18.08-27.12 44.9-22.32 70.91h1.92c25.56 0 51.72-15.39 67-35.11 14.72-18.77 25.88-45.37 21.8-72.66z"/></svg>
+              <span><small data-i18n="store.small">Descárgalo en el</small><b>App Store</b></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__devices reveal" data-delay="2">
+          <img class="shot shot--back" data-shot="02" src="/assets/screenshots/en/02-light.png" alt="Pantalla de receta de Levain mostrando un horneado guiado" width="480" height="988" loading="eager" decoding="async" />
+          <img class="shot shot--front" data-shot="01" src="/assets/screenshots/en/01-light.png" alt="Pantalla de inicio de Levain con el estado del fermento y el progreso del curso" width="480" height="988" fetchpriority="high" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ HOW IT WORKS ░░ -->
+    <section class="how" id="how">
+      <div class="section-head reveal">
+        <span class="pill-label" data-i18n="how.label">Cómo funciona</span>
+        <h2 data-i18n="how.h2">Tres pasos hasta tu<br /><span class="hl">primer pan perfecto</span></h2>
+        <p class="section-sub" data-i18n="how.sub">De la primera lección al pan en la mesa, Levain te acompaña en cada paso.</p>
+      </div>
+
+      <div class="steps">
+        <!-- 01 · Learn -->
+        <div class="step reveal">
+          <div class="step__card">
+            <span class="step__num">01</span>
+            <div class="phone phone--card">
+              <div class="phone__screen screen-course">
+                <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
+                <p class="scr-title" data-i18n="m.course">Curso</p>
+                <div class="co-video">
+                  <span class="co-video__play">▶</span>
+                  <span class="co-video__tag" data-i18n="m.videoTag">Vídeo · 4 min</span>
+                </div>
+                <p class="co-lesson" data-i18n="m.coLesson">¿Por qué masa madre?</p>
+                <div class="co-prog"><div class="bar"><i style="width:35%"></i></div><span>35%</span></div>
+                <div class="co-list">
+                  <div class="co-item done"><span class="dot">✓</span><span data-i18n="m.co1">Los tres ingredientes</span></div>
+                  <div class="co-item now"><span class="dot">▶</span><span data-i18n="m.co2">Harina y proteína</span></div>
+                  <div class="co-item"><span class="dot"></span><span data-i18n="m.co3">Agua e hidratación</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 data-i18n="how.s1t">Aprende el oficio</h3>
+          <p data-i18n="how.s1d">Empieza con lecciones cortas y prácticas, con vídeos en cada etapa, basadas en la ciencia y en la experiencia de panaderos de verdad.</p>
+        </div>
+
+        <!-- 02 · Create your levain -->
+        <div class="step reveal" data-delay="1">
+          <div class="step__card">
+            <span class="step__num">02</span>
+            <div class="phone phone--card">
+              <div class="phone__screen screen-track">
+                <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
+                <p class="tk-name" data-i18n="m.doughy">Doughy · <span>fermento de centeno</span></p>
+                <div class="ring ring--lg" style="--p:82"><div class="ring__hole"><b>82%</b><small data-i18n="m.toPeak">al punto</small></div></div>
+                <div class="tk-curve">
+                  <svg viewBox="0 0 220 66" preserveAspectRatio="none">
+                    <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2922D" stop-opacity=".45"/><stop offset="1" stop-color="#D2922D" stop-opacity="0"/></linearGradient></defs>
+                    <path d="M0,56 C40,54 55,18 90,12 C120,8 130,38 160,48 C185,56 200,54 220,56" fill="none" stroke="#C4872A" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M0,56 C40,54 55,18 90,12 C120,8 130,38 160,48 C185,56 200,54 220,56 L220,66 L0,66 Z" fill="url(#cg)"/>
+                    <circle cx="90" cy="12" r="4" fill="#9F4C00"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 data-i18n="how.s2t">Crea tu fermento</h3>
+          <p data-i18n="how.s2d">Crea y mantén un fermento saludable. Levain sigue cada alimentación y muestra el punto máximo exacto, el momento justo para hornear.</p>
+        </div>
+
+        <!-- 03 · Bake -->
+        <div class="step reveal" data-delay="2">
+          <div class="step__card">
+            <span class="step__num">03</span>
+            <div class="phone phone--card">
+              <div class="phone__screen screen-bake">
+                <div class="status-bar"><span>9:41</span><span class="status-bar__icons">􀙇 􀉪 􀛨</span></div>
+                <p class="scr-title" data-i18n="m.bakeMode">Modo horneado</p>
+                <div class="bake-now">
+                  <p class="bake-now__k" data-i18n="m.bulkStep">Paso 3 de 8 · Fermentación en bloque</p>
+                  <p class="bake-now__timer">2:45:00</p>
+                  <div class="bar"><i style="width:44%"></i></div>
+                </div>
+                <div class="bake-list">
+                  <div class="bake-row done"><span>✓</span><span data-i18n="m.autolyse">Autólisis</span><em>45m</em></div>
+                  <div class="bake-row done"><span>✓</span><span data-i18n="m.mixSalt">Mezclar y sal</span><em>15m</em></div>
+                  <div class="bake-row on"><span>▶</span><span data-i18n="m.stretchFold">Pliegues</span><em data-i18n="m.now">ahora</em></div>
+                  <div class="bake-row"><span></span><span data-i18n="m.shape">Formar</span><em>20m</em></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 data-i18n="how.s3t">Hornéalo todo</h3>
+          <p data-i18n="how.s3d">Sigue cualquier receta con temporizadores guiados: panes, pizzas, focaccias y más. Calentito, crujiente e inconfundiblemente tuyo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ FEATURES (Beyond the recipe) ░░ -->
+    <section class="beyond" id="features">
+      <div class="section-head reveal">
+        <span class="pill-label" data-i18n="beyond.label">Más allá de la receta</span>
+        <h2 data-i18n="beyond.h2">Hecho para convertirte<br /><span class="hl">en mejor panadero</span></h2>
+      </div>
+      <div class="beyond__grid">
+        <div class="feat reveal">
+          <div class="feat__icon">🎬</div>
+          <h3 data-i18n="beyond.f1t">Curso completo con vídeos</h3>
+          <p data-i18n="beyond.f1d">27 lecciones cortas en 5 módulos, con vídeos en cada etapa. Desde los ingredientes y el fermento hasta el método y la solución de problemas, un paso pequeño a la vez.</p>
+        </div>
+        <div class="feat reveal" data-delay="1">
+          <div class="feat__icon">🫙</div>
+          <h3 data-i18n="beyond.f2t">Herramientas para tu fermento</h3>
+          <p data-i18n="beyond.f2d">Sigue las alimentaciones, recibe la estimación del punto máximo (incluso con nevera) y ajusta cada proceso con calculadoras y temporizadores. Precisión sin adivinar.</p>
+        </div>
+        <div class="feat reveal" data-delay="2">
+          <div class="feat__icon">📖</div>
+          <h3 data-i18n="beyond.f3t">Recetas de principiante a avanzado</h3>
+          <p data-i18n="beyond.f3d">Una biblioteca que va desde tu primer pan hasta las fórmulas más avanzadas, cada una con modo de horneado guiado y temporizadores inteligentes.</p>
+        </div>
+        <div class="feat reveal" data-delay="3">
+          <div class="feat__icon">♻️</div>
+          <h3 data-i18n="beyond.f4t">Cero desperdicio, más que pan</h3>
+          <p data-i18n="beyond.f4d">Aprovecha cada gramo de fermento: pizzas, focaccias, galletas y mucho más. Sin descartes, todo delicioso.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ FAQ ░░ -->
+    <section class="faq" id="faq">
+      <div class="section-head reveal">
+        <span class="pill-label" data-i18n="faq.label">¿Tienes dudas?</span>
+        <h2 data-i18n="faq.h2">Preguntas frecuentes</h2>
+      </div>
+      <div class="faq__list reveal">
+        <details class="qa">
+          <summary><span data-i18n="faq.q1">¿Qué es exactamente Levain?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
+          <div class="qa__body" data-i18n="faq.a1">El compañero todo-en-uno de la masa madre: un curso completo, un monitor de fermento vivo, una biblioteca de recetas con modo de horneado guiado y un kit de calculadoras y temporizadores, todo reunido en una app cálida y sin conexión.</div>
+        </details>
+        <details class="qa">
+          <summary><span data-i18n="faq.q2">Soy principiante total. ¿Es para mí?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
+          <div class="qa__body" data-i18n="faq.a2">Claro que sí. El curso empieza desde tu primera alimentación y explica el <em>porqué</em>, no solo los pasos. Combínalo con las recetas para principiantes y Levain te acompaña hasta tu primer pan.</div>
+        </details>
+        <details class="qa">
+          <summary><span data-i18n="faq.q3">¿Cómo funciona la estimación del punto máximo?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
+          <div class="qa__body" data-i18n="faq.a3">Levain tiene en cuenta la proporción de alimentación, la temperatura ambiente y si el fermento está en la encimera o en la nevera, y muestra una curva de crecimiento en vivo con el momento del punto máximo, el momento ideal para hornear.</div>
+        </details>
+        <details class="qa">
+          <summary><span data-i18n="faq.q4">¿Funciona de verdad sin conexión?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
+          <div class="qa__body" data-i18n="faq.a4">100%. Sin cuenta, sin nube, sin rastreo. Cada lección, receta y herramienta viene con la app y vive en tu dispositivo. Funciona hasta en un avión sin señal.</div>
+        </details>
+        <details class="qa">
+          <summary><span data-i18n="faq.q5">¿Cuál es la diferencia entre Gratis y Premium?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
+          <div class="qa__body" data-i18n="faq.a5">El plan Gratis incluye el monitor de fermento, el primer módulo del curso, algunas recetas esenciales y la calculadora de hidratación. Premium desbloquea el curso completo de 27 lecciones, toda la biblioteca de recetas con modo de horneado, la calculadora de punto máximo, el diario y todas las herramientas, con 7 días gratis (US$ 14,99/mes o US$ 99,99/año).</div>
+        </details>
+        <details class="qa">
+          <summary><span data-i18n="faq.q6">¿Qué dispositivos son compatibles?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
+          <div class="qa__body" data-i18n="faq.a6">iPhone con iOS 16 o superior, en Inglés, Português y Español. Levain sigue automáticamente el tema claro u oscuro del sistema.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ░░ DOWNLOAD / FOOTER ░░ -->
+    <footer class="footer" id="download">
+      <div class="footer__cta reveal">
+        <a class="brand brand--lg" href="#top"><img class="brand__mark" src="/assets/icon.png" alt="" /><span class="brand__word">Levain</span></a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Convierte un frasco de harina y agua<br />en algo que vale la pena compartir.</p>
+        <a class="badge-store" href="#" aria-label="Download on the App Store">
+          <svg class="store-apple" viewBox="0 0 512 512" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M349.13 136.86c-40.32 0-57.36 19.24-85.44 19.24-28.79 0-50.75-19.1-85.69-19.1-34.2 0-70.67 20.88-93.83 56.45-32.52 50.16-27 144.63 25.67 225.11 18.84 28.81 44 61.12 77 61.47h.6c28.68 0 37.2-18.78 76.67-19h.6c38.88 0 46.68 18.89 75.24 18.89h.6c33-.35 59.51-36.15 78.35-64.85 13.56-20.64 18.6-31 29-54.35-76.19-28.92-88.43-136.93-13.08-178.34-23-28.8-55.32-45.45-85.79-45.45z"/><path d="M340.25 32c-24 1.63-52 16.91-68.4 36.86-14.88 18.08-27.12 44.9-22.32 70.91h1.92c25.56 0 51.72-15.39 67-35.11 14.72-18.77 25.88-45.37 21.8-72.66z"/></svg>
+          <span><small data-i18n="store.small">Descárgalo en el</small><b>App Store</b></span>
+        </a>
+      </div>
+      <div class="footer__cols" id="contact">
+        <div><h4 data-i18n="footer.contact">Contacto</h4>
+          <div class="socials">
+            <button type="button" data-contact data-i18n-aria="footer.support" aria-label="Soporte">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"/></svg>
+            </button>
+            <a href="https://www.instagram.com/levain.app" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@levain.app" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M412.19 118.66a109.27 109.27 0 01-9.45-5.5 132.87 132.87 0 01-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.5.71v.18a70 70 0 01-35.22 55.56 68.8 68.8 0 01-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0121.41 3.39l.1-83.94a153.14 153.14 0 00-118 34.52 161.79 161.79 0 00-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 00115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0027.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div><h4 data-i18n="footer.learn">Aprende</h4>
+          <a href="/guides/how-to-make-a-sourdough-starter/" data-i18n="footer.g1">Cómo Hacer una Masa Madre</a>
+          <a href="/guides/sourdough-starter-peak/" data-i18n="footer.g2">¿Cuándo Está en su Punto el Fermento?</a>
+          <a href="/guides/sourdough-hydration-explained/" data-i18n="footer.g3">La Hidratación Explicada</a>
+        </div>
+        <div><h4 data-i18n="footer.legal">Legal</h4>
+          <a data-doc="privacy-policy" href="https://oviniciusramosp.github.io/bread-legal/legal/privacy-policy-es.html" data-i18n="footer.privacy">Política de Privacidad</a>
+          <a data-doc="terms-of-service" href="https://oviniciusramosp.github.io/bread-legal/legal/terms-of-service-es.html" data-i18n="footer.terms">Términos de Servicio</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="lang-select">
+          <svg class="lang-select__globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 3a9 9 0 100 18 9 9 0 000-18zM3 12h18M12 3c2.5 2.4 3.8 5.6 3.8 9S14.5 18.6 12 21C9.5 18.6 8.2 15.4 8.2 12S9.5 5.4 12 3z"/></svg>
+          <select id="langSelect" aria-label="Language / Idioma / Idioma">
+            <option value="pt-BR">Português</option>
+            <option value="en">English</option>
+            <option value="es" selected>Español</option>
+          </select>
+          <svg class="lang-select__chev" viewBox="0 0 512 512" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+        </div>
+        <span data-i18n="footer.copyright">© 2026 Levain. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ░░ CONTACT MODAL ░░ -->
+  <div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__x" type="button" data-close aria-label="Close">✕</button>
+      <h3 id="contactTitle" data-i18n="contact.title">Hablemos</h3>
+      <p class="modal__sub" data-i18n="contact.sub">¿Dudas, errores o ideas? Envía un mensaje y te respondemos por correo.</p>
+
+      <form id="contactForm" novalidate>
+        <label class="field">
+          <span data-i18n="contact.name">Nombre</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label class="field">
+          <span data-i18n="contact.email">Correo</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label class="field">
+          <span data-i18n="contact.message">Mensaje</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <!-- honeypot: hidden from humans, bots fill it in -->
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+        <button class="btn btn--dark modal__submit" type="submit" data-i18n="contact.send">Enviar mensaje</button>
+        <p class="modal__status" id="contactStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="/i18n.js?v=4"></script>
+  <script src="/main.js?v=4"></script>
+</body>
+</html>

@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://levain-app.com/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://levain-app.com/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://levain-app.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://levain-app.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://levain-app.com/" />
+  </url>
+  <url>
+    <loc>https://levain-app.com/pt/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://levain-app.com/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://levain-app.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://levain-app.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://levain-app.com/" />
+  </url>
+  <url>
+    <loc>https://levain-app.com/es/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://levain-app.com/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://levain-app.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://levain-app.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://levain-app.com/" />
+  </url>
+  <url>
+    <loc>https://levain-app.com/guides/how-to-make-a-sourdough-starter/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://levain-app.com/guides/sourdough-starter-peak/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://levain-app.com/guides/sourdough-hydration-explained/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -421,3 +421,30 @@ html.banner-open .nav { top: 44px; }
   .footer__cols { gap: 2.5rem; }
   .footer__bar { flex-direction: column; gap: .9rem; text-align: center; }
 }
+
+/* ── Guide articles (/guides/…) ─────────────────────────────── */
+.guide { max-width: 46rem; margin: 0 auto; padding: 8.5rem 1.4rem 4rem; }
+.guide h1 { font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.12; margin-bottom: 1rem; }
+.guide__meta { color: var(--ink-soft); font-size: .9rem; margin-bottom: 2.2rem; }
+.guide h2 { font-size: 1.45rem; margin: 2.4rem 0 .8rem; }
+.guide h3 { font-size: 1.1rem; margin: 1.6rem 0 .5rem; }
+.guide p, .guide li { color: var(--ink-soft); font-size: 1.02rem; line-height: 1.75; }
+.guide p { margin-bottom: 1rem; }
+.guide ul, .guide ol { padding-left: 1.35rem; margin-bottom: 1.1rem; }
+.guide li { margin-bottom: .45rem; }
+.guide li::marker { color: var(--mustard-deep); }
+.guide strong { color: var(--ink); }
+.guide a { color: var(--mustard-dark); text-decoration: underline; text-underline-offset: 3px; }
+.guide__cta {
+  margin-top: 3rem; padding: 1.8rem; text-align: center;
+  background: var(--amber-bg); border-radius: var(--radius);
+}
+.guide__cta p { color: var(--ink); font-weight: 600; margin-bottom: 1.1rem; }
+.guide__cta .btn { display: inline-block; }
+.guide__footer {
+  max-width: 46rem; margin: 0 auto; padding: 1.6rem 1.4rem 2.4rem;
+  border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: .4rem 1.4rem;
+  font-size: .88rem; color: var(--ink-soft);
+}
+.guide__footer a:hover { color: var(--mustard-deep); }

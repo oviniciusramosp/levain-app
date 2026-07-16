@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Levain | Bake Real Sourdough, Skip the Guesswork</title>
-  <meta name="description" content="Learn sourdough with a Duolingo-style course grounded in real science and the experience of expert bakers, plus smart tools that take the guesswork out of every bake. Free on iPhone." />
+  <title>Levain — Sourdough App: Course, Starter Tracker &amp; Recipes</title>
+  <meta name="description" content="The all-in-one sourdough app for iPhone: a gamified course built with expert bakers, a starter tracker that predicts peak time, and guided recipes. Free download." />
   <meta name="theme-color" content="#F1F0ED" />
   <meta name="author" content="Levain" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://levain-app.com/" />
+  <link rel="alternate" hreflang="en" href="https://levain-app.com/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://levain-app.com/pt/" />
+  <link rel="alternate" hreflang="es" href="https://levain-app.com/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://levain-app.com/" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Levain" />
-  <meta property="og:title" content="Levain | Bake Real Sourdough, Skip the Guesswork" />
-  <meta property="og:description" content="A Duolingo-style sourdough course built on real science and the experience of expert bakers and fermentation researchers, plus smart tools for every bake." />
+  <meta property="og:title" content="Levain — Sourdough App: Course, Starter Tracker &amp; Recipes" />
+  <meta property="og:description" content="Learn sourdough with a bite-size, gamified course built with expert bakers, plus smart tools that track your starter and time every bake. Free on iPhone." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://levain-app.com/" />
   <meta property="og:image" content="https://levain-app.com/assets/og-cover.png" />
@@ -26,19 +30,21 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Levain | Bake Real Sourdough, Skip the Guesswork" />
-  <meta name="twitter:description" content="A Duolingo-style sourdough course grounded in real science, plus smart tools for your starter and every bake. Free on iPhone." />
+  <meta name="twitter:title" content="Levain — Sourdough App: Course, Starter Tracker &amp; Recipes" />
+  <meta name="twitter:description" content="Learn sourdough with a bite-size, gamified course, plus smart tools for your starter and every bake. Free on iPhone." />
   <meta name="twitter:image" content="https://levain-app.com/assets/og-cover.png" />
 
-  <link rel="icon" href="assets/icon.png" />
-  <link rel="apple-touch-icon" href="assets/icon.png" />
-  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" href="/assets/icon.png" />
+  <link rel="apple-touch-icon" href="/assets/icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Fonts load async so they don't block first paint; noscript keeps them for JS-off visitors. -->
+  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" /></noscript>
 
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="/styles.css?v=4" />
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -50,7 +56,7 @@
         "@id": "https://levain-app.com/#website",
         "url": "https://levain-app.com/",
         "name": "Levain",
-        "description": "The all-in-one sourdough app: a Duolingo-style course, starter tracker, recipes and smart baking tools.",
+        "description": "The all-in-one sourdough app: a gamified course, starter tracker, recipes and smart baking tools.",
         "inLanguage": ["en", "pt-BR", "es"],
         "publisher": { "@id": "https://levain-app.com/#org" }
       },
@@ -73,7 +79,7 @@
         "applicationCategory": "LifestyleApplication",
         "url": "https://levain-app.com/",
         "image": "https://levain-app.com/assets/icon.png",
-        "description": "Learn sourdough with a Duolingo-style course grounded in real science and the experience of expert bakers, plus smart tools to keep your starter healthy and follow recipes with guided timers. Works 100% offline.",
+        "description": "Learn sourdough with a bite-size, gamified course grounded in real science and the experience of expert bakers, plus smart tools to keep your starter healthy and follow recipes with guided timers. Works 100% offline.",
         "inLanguage": ["en", "pt-BR", "es"],
         "author": { "@id": "https://levain-app.com/#org" },
         "offers": [
@@ -109,12 +115,12 @@
           {
             "@type": "Question",
             "name": "What's the difference between Free and Premium?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Free gives you the starter tracker, the first course module, a handful of core recipes and the hydration calculator. Premium unlocks the full 27-lesson course, all 15 recipes with bake mode, the peak calculator, journal and every tool, with a 7-day free trial ($14.99/month or $99.99/year)." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Free gives you the starter tracker, the first course module, a handful of core recipes and the hydration calculator. Premium unlocks the full 27-lesson course, the entire recipe library with bake mode, the peak calculator, journal and every tool, with a 7-day free trial ($14.99/month or $99.99/year)." }
           },
           {
             "@type": "Question",
             "name": "Which devices are supported?",
-            "acceptedAnswer": { "@type": "Answer", "text": "iPhone on iOS 16 and later, in English, Portugues and Espanol. Levain follows your system light or dark theme automatically." }
+            "acceptedAnswer": { "@type": "Answer", "text": "iPhone on iOS 16 and later, in English, Português and Español. Levain follows your system light or dark theme automatically." }
           }
         ]
       }
@@ -128,7 +134,7 @@
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a class="brand" href="#top" aria-label="Levain home">
-        <img class="brand__mark" src="assets/icon.png" alt="" />
+        <img class="brand__mark" src="/assets/icon.png" alt="" />
         <span class="brand__word">Levain</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
@@ -157,7 +163,7 @@
           <p class="hero__sub reveal" data-delay="2" data-i18n="hero.sub">
             Learn sourdough through a Duolingo-style course, grounded in real science and the
             hands-on experience of expert bakers and fermentation researchers. Then let smart
-            tools take the guesswork out of every bake.
+            tools time every step of every bake.
           </p>
           <div class="hero__actions reveal" data-delay="3">
             <a class="badge-store" href="#download" aria-label="Download on the App Store">
@@ -168,8 +174,8 @@
         </div>
 
         <div class="hero__devices reveal" data-delay="2">
-          <img class="shot shot--back" data-shot="02" src="assets/screenshots/en/02-light.png" alt="Levain recipe screen showing a guided sourdough bake" width="480" height="988" loading="eager" decoding="async" />
-          <img class="shot shot--front" data-shot="01" src="assets/screenshots/en/01-light.png" alt="Levain home screen with sourdough starter status and course progress" width="480" height="988" fetchpriority="high" decoding="async" />
+          <img class="shot shot--back" data-shot="02" src="/assets/screenshots/en/02-light.png" alt="Levain recipe screen showing a guided sourdough bake" width="480" height="988" loading="eager" decoding="async" />
+          <img class="shot shot--front" data-shot="01" src="/assets/screenshots/en/01-light.png" alt="Levain home screen with sourdough starter status and course progress" width="480" height="988" fetchpriority="high" decoding="async" />
         </div>
       </div>
     </section>
@@ -206,7 +212,7 @@
             </div>
           </div>
           <h3 data-i18n="how.s1t">Learn the craft</h3>
-          <p data-i18n="how.s1d">Start with the Duolingo-style course. Lessons are short and hands-on, with videos built in, grounded in science and the experience of real bakers.</p>
+          <p data-i18n="how.s1d">Start with short, hands-on lessons, videos built in, grounded in science and the experience of real bakers.</p>
         </div>
 
         <!-- 02 · Create your levain -->
@@ -271,7 +277,7 @@
         <div class="feat reveal">
           <div class="feat__icon">🎬</div>
           <h3 data-i18n="beyond.f1t">A complete video course</h3>
-          <p data-i18n="beyond.f1d">27 short lessons across 5 modules, with videos built in. From ingredients and the starter to method and troubleshooting, Duolingo-style.</p>
+          <p data-i18n="beyond.f1d">27 short lessons across 5 modules, with videos built in. From ingredients and the starter to method and troubleshooting, one bite-size step at a time.</p>
         </div>
         <div class="feat reveal" data-delay="1">
           <div class="feat__icon">🫙</div>
@@ -316,7 +322,7 @@
         </details>
         <details class="qa">
           <summary><span data-i18n="faq.q5">What's the difference between Free and Premium?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
-          <div class="qa__body" data-i18n="faq.a5">Free gives you the starter tracker, the first course module, a handful of core recipes and the hydration calculator. Premium unlocks the full 27-lesson course, all 15 recipes with bake mode, the peak calculator, journal and every tool, with a 7-day free trial ($14.99/month or $99.99/year).</div>
+          <div class="qa__body" data-i18n="faq.a5">Free gives you the starter tracker, the first course module, a handful of core recipes and the hydration calculator. Premium unlocks the full 27-lesson course, the entire recipe library with bake mode, the peak calculator, journal and every tool, with a 7-day free trial ($14.99/month or $99.99/year).</div>
         </details>
         <details class="qa">
           <summary><span data-i18n="faq.q6">Which devices are supported?</span><svg class="chev" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></summary>
@@ -328,7 +334,7 @@
     <!-- ░░ DOWNLOAD / FOOTER ░░ -->
     <footer class="footer" id="download">
       <div class="footer__cta reveal">
-        <a class="brand brand--lg" href="#top"><img class="brand__mark" src="assets/icon.png" alt="" /><span class="brand__word">Levain</span></a>
+        <a class="brand brand--lg" href="#top"><img class="brand__mark" src="/assets/icon.png" alt="" /><span class="brand__word">Levain</span></a>
         <p class="footer__tagline" data-i18n="footer.tagline">Turn a jar of flour and water<br />into something worth sharing.</p>
         <a class="badge-store" href="#" aria-label="Download on the App Store">
           <svg class="store-apple" viewBox="0 0 512 512" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M349.13 136.86c-40.32 0-57.36 19.24-85.44 19.24-28.79 0-50.75-19.1-85.69-19.1-34.2 0-70.67 20.88-93.83 56.45-32.52 50.16-27 144.63 25.67 225.11 18.84 28.81 44 61.12 77 61.47h.6c28.68 0 37.2-18.78 76.67-19h.6c38.88 0 46.68 18.89 75.24 18.89h.6c33-.35 59.51-36.15 78.35-64.85 13.56-20.64 18.6-31 29-54.35-76.19-28.92-88.43-136.93-13.08-178.34-23-28.8-55.32-45.45-85.79-45.45z"/><path d="M340.25 32c-24 1.63-52 16.91-68.4 36.86-14.88 18.08-27.12 44.9-22.32 70.91h1.92c25.56 0 51.72-15.39 67-35.11 14.72-18.77 25.88-45.37 21.8-72.66z"/></svg>
@@ -349,6 +355,11 @@
             </a>
           </div>
         </div>
+        <div><h4 data-i18n="footer.learn">Learn</h4>
+          <a href="/guides/how-to-make-a-sourdough-starter/" data-i18n="footer.g1">How to Make a Sourdough Starter</a>
+          <a href="/guides/sourdough-starter-peak/" data-i18n="footer.g2">When Is Your Starter at Peak?</a>
+          <a href="/guides/sourdough-hydration-explained/" data-i18n="footer.g3">Sourdough Hydration Explained</a>
+        </div>
         <div><h4 data-i18n="footer.legal">Legal</h4>
           <a data-doc="privacy-policy" href="https://oviniciusramosp.github.io/bread-legal/legal/privacy-policy-en.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a data-doc="terms-of-service" href="https://oviniciusramosp.github.io/bread-legal/legal/terms-of-service-en.html" data-i18n="footer.terms">Terms of Service</a>
@@ -359,7 +370,7 @@
           <svg class="lang-select__globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 3a9 9 0 100 18 9 9 0 000-18zM3 12h18M12 3c2.5 2.4 3.8 5.6 3.8 9S14.5 18.6 12 21C9.5 18.6 8.2 15.4 8.2 12S9.5 5.4 12 3z"/></svg>
           <select id="langSelect" aria-label="Language / Idioma / Idioma">
             <option value="pt-BR">Português</option>
-            <option value="en">English</option>
+            <option value="en" selected>English</option>
             <option value="es">Español</option>
           </select>
           <svg class="lang-select__chev" viewBox="0 0 512 512" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
@@ -398,7 +409,7 @@
     </div>
   </div>
 
-  <script src="i18n.js?v=3"></script>
-  <script src="main.js?v=3"></script>
+  <script src="/i18n.js?v=4"></script>
+  <script src="/main.js?v=4"></script>
 </body>
 </html>
